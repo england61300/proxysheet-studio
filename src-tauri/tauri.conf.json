@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ProxySheet Studio",
+  "version": "0.7.1",
+  "identifier": "com.devin.proxysheetstudio",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "ProxySheet Studio",
+        "width": 1280,
+        "height": 860,
+        "minWidth": 980,
+        "minHeight": 720,
+        "resizable": true,
+        "maximized": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Utility",
+    "shortDescription": "Card sheet and proxy PDF generator",
+    "longDescription": "Offline utility for arranging card fronts, backs, generated backs, and simple prototype cards into printable PDF sheets.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/256x256.png",
+      "icons/icon.png",
+      "icons/icon.ico",
+      "icons/icon.icns"
+    ],
+    "macOS": {
+      "signingIdentity": "-"
+    }
+  }
+}
